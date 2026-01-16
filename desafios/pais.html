@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual seu país?</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Você é brasileiro?</h1>
+    <form onsubmit="brasil(); return false;">
+        <label for="pais">Você nasceu no Brasil?(Sim/Não)</label>
+        <input type="text" name="pais" id="pais">
+        <input type="submit" value="Enviar">
+        <div id="res">Resposta...</div>
+    </form>
+
+    <script>
+        function brasil() {
+            var pais = window.document.getElementById('pais').value
+            var res = window.document.getElementById('res')
+
+            if (pais.toLowerCase() === 'sim') {
+                res.innerHTML = 'Você é brasileiro!'
+            } else {
+                res.innerHTML = 'Você não é brasileiro!'
+            }
+            
+        }
+    </script>
+</body>
+</html>
