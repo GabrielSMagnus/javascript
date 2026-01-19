@@ -1,24 +1,31 @@
 @charset "UTF-8";
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: rgb(70, 142, 236);
-    font-family:Arial, Helvetica, sans-serif;
-    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 15pt;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     color: white;
     text-align: center;
+    padding: 20px 10px;
 }
 
 section {
     background-color: white;
     border-radius: 10px;
     padding: 15px;
-    width: 500px;
+    width: 90%;
+    max-width: 600px;
     margin: auto;
-    box-shadow: 3px 3px 10px black;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
 }
 
 div#hora {
@@ -27,12 +34,15 @@ div#hora {
 }
 
 img#imagem {
-    height: 50vh;
-    width: 500px;
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 footer {
     color: white;
     text-align: center;
     font-style: italic;
+    padding: 10px;
 }
