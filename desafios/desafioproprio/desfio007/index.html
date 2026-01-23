@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual o maior?</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        div {
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Qual é o maior?</h1>
+    </header>
+    <section>
+        <div>
+            <label for="in1">Digite um número</label>
+            <input type="number" name="n1" id="in1">
+        </div>
+        <div>
+            <label for="in2">Digite outro número</label>
+            <input type="number" name="n2" id="in2">
+        </div>
+        <div>
+            <input onclick="verificar()" type="button" value="Verificar">
+        </div>
+
+        <div>
+            <p id="res"></p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
