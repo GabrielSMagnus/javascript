@@ -12,8 +12,15 @@ function calcular() {
     const soma = nota1 + nota2 + nota3
 
     const resultado = soma / 3
-
     
+    res.innerHTML = `A média é ${resultado.toFixed(2)}. `
 
-    res.innerHTML = `A sua média é ${resultado.toFixed(2)}`
+    if (resultado >= 7) {
+        res.innerHTML += `O aluno está aprovado!`
+    } else if (resultado >=5) {
+        res.innerHTML += `O aluno está de recuperação!`
+    } else {
+        res.innerHTML += `O aluno está reprovado!`
+    }
+
 }
